@@ -1,0 +1,17 @@
+{
+    "405815887459778561" : {
+        "ADMIN_ROLE" : "Buds",
+        "MOD_ROLE" : "[\ud83d\udd25]Mods"
+    },
+    "EMAIL" : "NDg1Nzg0MjM4Mjc3MjYzMzYy.Dp57Xg.ujBgyuSnmfb1-2y4WuCQiyaCkm0",
+    "LOGIN_TYPE" : "Token",
+    "OWNER" : "417445689249890304",
+    "PASSWORD" : "",
+    "PREFIXES" : [
+        "r!"
+    ],
+    "default" : {
+        "ADMIN_ROLE" : "Buds",
+        "MOD_ROLE" : "Bot Dev"
+    }
+}

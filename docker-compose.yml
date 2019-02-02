@@ -1,0 +1,7 @@
+version: '2'
+services:
+  robot:
+    image: keyglitch/docker-discordpy-playlist
+    environment:
+      TOKEN: 'NDg1Nzg0MjM4Mjc3MjYzMzYy.DoM8Jg.X59jqffPaPy9xF1rrf7EVoDND2Q'
+      SKIP_VOTES_NEEDED: 3

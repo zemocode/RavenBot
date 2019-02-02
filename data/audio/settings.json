@@ -1,0 +1,10 @@
+{
+    "AVCONV" : false,
+    "MAX_CACHE" : 0,
+    "MAX_LENGTH" : 3700,
+    "QUEUE_MODE" : true,
+    "SERVER_SFX_ON" : {},
+    "SOUNDCLOUD_CLIENT_ID" : null,
+    "TITLE_STATUS" : true,
+    "VOLUME" : 0.5
+}

@@ -1,0 +1,13 @@
+{
+    "EMAIL" : "NDg1Nzg0MjM4Mjc3MjYzMzYy.DqZvkg.vl7IjDgTJ8-BP-QIcgV8kbQsPYw",
+    "LOGIN_TYPE" : "Token",
+    "OWNER" : "417445689249890304",
+    "PASSWORD" : "",
+    "PREFIXES" : [
+        "r!"
+    ],
+    "default" : {
+        "ADMIN_ROLE" : "Owner",
+        "MOD_ROLE" : "Buds"
+    }
+}

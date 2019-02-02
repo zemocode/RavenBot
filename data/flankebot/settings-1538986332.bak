@@ -1,0 +1,38 @@
+{
+    "EMAIL" : "NDg1Nzg0MjM4Mjc3MjYzMzYy.DoM8Jg.X59jqffPaPy9xF1rrf7EVoDND2Q",
+    "LOGIN_TYPE" : "NDg1Nzg0MjM4Mjc3MjYzMzYy.DoM8Jg.X59jqffPaPy9xF1rrf7EVoDND2Q",
+    "OWNER" : "id_here",
+    "PASSWORD" : "",
+    "PREFIXES" : [
+        "done",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";",
+        ";"
+    ],
+    "default" : {
+        "ADMIN_ROLE" : "Transistor",
+        "MOD_ROLE" : "Process"
+    }
+}

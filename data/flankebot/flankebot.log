@@ -1,0 +1,132 @@
+﻿[10/12/2018 20:59] ERROR bot <module> 402: Traceback (most recent call last):
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\connector.py", line 601, in _create_direct_connection
+    local_addr=self._local_addr)
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\asyncio\base_events.py", line 777, in create_connection
+    raise exceptions[0]
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\asyncio\base_events.py", line 764, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\asyncio\selector_events.py", line 450, in sock_connect
+    return (yield from fut)
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\asyncio\selector_events.py", line 480, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 10060] Connect call failed ('104.16.58.5', 443)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\connector.py", line 304, in connect
+    yield from self._create_connection(req)
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\connector.py", line 578, in _create_connection
+    transport, proto = yield from self._create_direct_connection(req)
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\connector.py", line 624, in _create_direct_connection
+    (req.host, req.port, exc.strerror)) from exc
+aiohttp.errors.ClientOSError: [Errno 10060] Can not connect to discordapp.com:443 [Connect call failed ('104.16.58.5', 443)]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jeanbraddy112553\Desktop\flankebot\bot.py", line 392, in <module>
+    loop.run_until_complete(main())
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\asyncio\base_events.py", line 467, in run_until_complete
+    return future.result()
+  File "C:\Users\jeanbraddy112553\Desktop\flankebot\bot.py", line 387, in main
+    yield from bot.connect()
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\discord\client.py", line 452, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=resume)
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\discord\gateway.py", line 174, in from_client
+    gateway = yield from client.http.get_gateway()
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\discord\http.py", line 578, in get_gateway
+    data = yield from self.get(self.GATEWAY, bucket=_func_())
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\discord\http.py", line 105, in request
+    r = yield from self.session.request(method, url, **kwargs)
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\client.py", line 555, in __iter__
+    resp = yield from self._coro
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\client.py", line 198, in _request
+    conn = yield from self._connector.connect(req)
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\connector.py", line 314, in connect
+    .format(key, exc.strerror)) from exc
+aiohttp.errors.ClientOSError: [Errno 10060] Cannot connect to host discordapp.com:443 ssl:True [Can not connect to discordapp.com:443 [Connect call failed ('104.16.58.5', 443)]]
+
+[11/12/2018 20:17] ERROR bot load_cogs 333: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\jeanbraddy112553\Desktop\flankebot\bot.py", line 330, in load_cogs
+    owner_cog._load_cog(extension)
+  File "C:\Users\jeanbraddy112553\Desktop\flankebot\cogs\owner.py", line 397, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\discord\ext\commands\bot.py", line 740, in load_extension
+    lib.setup(self)
+  File "C:\Users\jeanbraddy112553\Desktop\flankebot\cogs\mod.py", line 578, in setup
+    n = Mod(bot)
+  File "C:\Users\jeanbraddy112553\Desktop\flankebot\cogs\mod.py", line 24, in __init__
+    self.past_names = fileIO("data/mod/past_names.json", "load")
+  File "C:\Users\jeanbraddy112553\Desktop\flankebot\cogs\utils\dataIO.py", line 9, in fileIO
+    return json.loads(f.read())
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[21/12/2018 15:30] ERROR bot <module> 402: Traceback (most recent call last):
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\asyncio\selector_events.py", line 723, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\client.py", line 202, in _request
+    yield from resp.start(conn, read_until_eof)
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\client_reqrep.py", line 640, in start
+    message = yield from httpstream.read()
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\streams.py", line 641, in read
+    result = yield from super().read()
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\streams.py", line 476, in read
+    yield from self._waiter
+aiohttp.errors.ServerDisconnectedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\jeanbraddy112553\Desktop\flankebot\bot.py", line 392, in <module>
+    loop.run_until_complete(main())
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\asyncio\base_events.py", line 467, in run_until_complete
+    return future.result()
+  File "C:\Users\jeanbraddy112553\Desktop\flankebot\bot.py", line 387, in main
+    yield from bot.connect()
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\discord\client.py", line 452, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=resume)
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\discord\gateway.py", line 174, in from_client
+    gateway = yield from client.http.get_gateway()
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\discord\http.py", line 578, in get_gateway
+    data = yield from self.get(self.GATEWAY, bucket=_func_())
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\discord\http.py", line 105, in request
+    r = yield from self.session.request(method, url, **kwargs)
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\client.py", line 555, in __iter__
+    resp = yield from self._coro
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\client.py", line 209, in _request
+    raise aiohttp.ClientResponseError() from exc
+aiohttp.errors.ClientResponseError
+
+[22/12/2018 18:56] ERROR bot load_cogs 333: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\jeanbraddy112553\Desktop\flankebot\bot.py", line 330, in load_cogs
+    owner_cog._load_cog(extension)
+  File "C:\Users\jeanbraddy112553\Desktop\flankebot\cogs\owner.py", line 397, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\site-packages\discord\ext\commands\bot.py", line 740, in load_extension
+    lib.setup(self)
+  File "C:\Users\jeanbraddy112553\Desktop\flankebot\cogs\mod.py", line 578, in setup
+    n = Mod(bot)
+  File "C:\Users\jeanbraddy112553\Desktop\flankebot\cogs\mod.py", line 24, in __init__
+    self.past_names = fileIO("data/mod/past_names.json", "load")
+  File "C:\Users\jeanbraddy112553\Desktop\flankebot\cogs\utils\dataIO.py", line 9, in fileIO
+    return json.loads(f.read())
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\jeanbraddy112553\AppData\Local\Programs\Python\Python36\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
